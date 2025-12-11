@@ -1,4 +1,4 @@
-# backtester.py
+# encoding=utf-8
 """
 交易策略回测模块：基于 GBDT 分类预测结果，模拟交易并评估策略收益。
 """
@@ -48,4 +48,3 @@ def run_backtest(test_df_aligned, gbdt_predictions):
 
     return test_data
 
-# 代码行数估算: ~85 行
