@@ -1,4 +1,4 @@
-# feature_engineer.py
+# encoding=utf-8
 """
 特征工程、数据标准化和时间序列转换模块。
 核心功能：为 GBDT 生成分类目标；为 LSTM 创建序列数据。
@@ -72,5 +72,3 @@ def create_lstm_sequences(data, time_step=TIME_STEP):
 
     print(f"   - LSTM 3D Tensor shape: X:{X.shape}, Y:{y.shape}")
     return X, y, scaler
-
-# 代码行数估算: ~100 行
