@@ -1,4 +1,4 @@
-# config.py
+# encoding=utf-8
 """
 项目配置模块：定义路径、超参数和常量。
 """
@@ -11,7 +11,6 @@ DATA_FILE_PATH = os.path.join(BASE_DIR, DATA_FILE_NAME)
 MODEL_SAVE_PATH = os.path.join(BASE_DIR, 'models')
 RESULT_SAVE_PATH = os.path.join(BASE_DIR, 'results')
 
-# 创建必要的文件夹
 os.makedirs(MODEL_SAVE_PATH, exist_ok=True)
 os.makedirs(RESULT_SAVE_PATH, exist_ok=True)
 
@@ -39,7 +38,7 @@ IMAGE_2_NAME = '2_GBDT_Feature_Importance.png'
 IMAGE_3_NAME = '3_Backtest_Performance.png'
 
 # --- 全局变量（用于Scaler共享） ---
-# 这是一个字典，用于在 feature_engineer 中存储 MinMaxScaer 实例
+# 字典，用于在 feature_engineer 中存储 MinMaxScaer 实例
 GLOBAL_SCALER_STORE = {}
 
 def get_config():
@@ -55,5 +54,3 @@ def get_config():
     }
 
 print("Config loaded successfully.")
-
-# 代码行数估算: ~50 行
