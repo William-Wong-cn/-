@@ -1,4 +1,4 @@
-# data_loader.py
+# encoding=utf-8
 """
 数据加载、初步清洗和训练/测试集划分模块。
 核心功能：处理 NaN 值和格式转换。
@@ -67,5 +67,3 @@ def get_processed_data():
         raise ValueError("Data processing resulted in an empty DataFrame.")
 
     return df_clean
-
-# 代码行数估算: ~80 行
