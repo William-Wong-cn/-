@@ -1,14 +1,8 @@
-# main.py
-"""
-项目主程序入口：控制数据流、模型训练和结果生成。
-这是项目的核心编排文件。
-"""
+# encoding=utf-8
 import os
 import sys
 import numpy as np
 import pandas as pd
-
-# 导入所有模块 (实际运行时应确保这些模块在同一目录下或已安装)
 from data_loader import get_processed_data, split_data
 from feature_engineer import prepare_gbdt_data, create_lstm_sequences
 from model_lstm import train_lstm_model
@@ -18,8 +12,7 @@ from visualizer import plot_lstm_results, plot_gbdt_feature_importance, plot_bac
 from backtester import run_backtest
 from config import TIME_STEP, TARGET_COLUMN
 
-
-# 检查依赖（重要：用于简历项目展示环境配置能力）
+# 检查依赖
 def check_dependencies():
     """检查关键依赖是否安装"""
     deps = {
@@ -73,9 +66,6 @@ def execute_pipeline():
 
     except Exception as e:
         print(f"[ERROR] GBDT/Backtest execution failed: {e}. (Possible missing LightGBM)")
-        # 可选：如果失败，可以调用模拟绘图函数来满足简历要求
-        # plot_gbdt_feature_importance_synthetic()
-        # plot_backtest_performance_synthetic()
 
     # --- 3. LSTM 模型 (回归任务) ---
     print("\n--- Phase 2: LSTM Model (Regression) ---")
@@ -111,5 +101,3 @@ def execute_pipeline():
 if __name__ == '__main__':
     check_dependencies()
     execute_pipeline()
-
-# 代码行数估算: ~150 行
