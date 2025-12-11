@@ -1,6 +1,6 @@
-# visualizer.py
+# encoding=utf-8
 """
-结果可视化模块：生成所有项目所需的图表（至少三张）。
+结果可视化模块：生成所有项目所需的图表。
 """
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -77,4 +77,3 @@ def plot_backtest_performance(history_df, strategy_name="GBDT_Classifier_Strateg
     fig.tight_layout()
     save_plot(fig, IMAGE_3_NAME)
 
-# 代码行数估算: ~120 行
