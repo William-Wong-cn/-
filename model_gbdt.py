@@ -1,4 +1,4 @@
-# encoding=utf-8
+# -*- coding: utf-8 -*-
 """
 基于 LightGBM 的梯度提升决策树 (GBDT) 模型模块。
 用于股票涨跌的分类预测。
@@ -48,3 +48,4 @@ def load_gbdt_model():
     if os.path.exists(GBDT_MODEL_FILE) and joblib:
         return joblib.load(GBDT_MODEL_FILE)
     return None
+
