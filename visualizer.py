@@ -1,4 +1,4 @@
-# encoding=utf-8
+# -*- coding: utf-8 -*-
 """
 结果可视化模块：生成所有项目所需的图表。
 """
@@ -76,4 +76,5 @@ def plot_backtest_performance(history_df, strategy_name="GBDT_Classifier_Strateg
     ax.grid(True, linestyle='--', alpha=0.6)
     fig.tight_layout()
     save_plot(fig, IMAGE_3_NAME)
+
 
