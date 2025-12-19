@@ -1,4 +1,4 @@
-# encoding=utf-8
+# -*- coding: utf-8 -*-
 import os
 import sys
 import numpy as np
@@ -101,3 +101,4 @@ def execute_pipeline():
 if __name__ == '__main__':
     check_dependencies()
     execute_pipeline()
+
