@@ -1,4 +1,4 @@
-# encoding=utf-8
+# -*- coding: utf-8 -*-
 """
 交易策略回测模块：基于 GBDT 分类预测结果，模拟交易并评估策略收益。
 """
@@ -47,4 +47,5 @@ def run_backtest(test_df_aligned, gbdt_predictions):
     plot_backtest_performance(test_data)
 
     return test_data
+
 
