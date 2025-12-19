@@ -1,4 +1,4 @@
-# encoding=utf-8
+# -*- coding: utf-8 -*-
 """
 项目配置模块：定义路径、超参数和常量。
 """
@@ -54,3 +54,4 @@ def get_config():
     }
 
 print("Config loaded successfully.")
+
