@@ -1,4 +1,4 @@
-# encoding=utf-8
+# -*- coding: utf-8 -*-
 """
 基于 Keras/TensorFlow 的 LSTM 神经网络模型模块。
 用于股票价格的连续值预测 (回归)。
@@ -71,4 +71,5 @@ def load_lstm_model():
     if os.path.exists(LSTM_MODEL_FILE) and load_model:
         return load_model(LSTM_MODEL_FILE)
     return None
+
 
