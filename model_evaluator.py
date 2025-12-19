@@ -1,4 +1,4 @@
-# encoding=utf-8
+# -*- coding: utf-8 -*-
 """
 模型评估模块：计算回归模型的 RMSE/MAE 和分类模型的准确率等指标。
 """
@@ -65,4 +65,5 @@ def evaluate_gbdt_classifier(y_true, y_pred):
     print("   - Confusion Matrix:\n", cm)
 
     return {'Accuracy': accuracy, 'Precision': precision, 'Recall': recall, 'F1': f1}
+
 
